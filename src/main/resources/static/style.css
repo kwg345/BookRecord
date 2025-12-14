@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/* 基本スタイル */
+body{
+	padding:1%;
+}
+
+h1{
+	color:#A6E1CA;
+	margin-top:0;
+}
+
+h2{
+	color:#A6E1CA;
+	margin-bottom: 0;
+}
+
+/* フォーム入力 */
+.form-group input,
+.form-group textarea {
+	width :97%;
+	padding: 5px;
+	font-size: 14px;
+}
+
+/* 投稿フォーム全体 */
+.post-form {
+  width: 40%;
+  max-width: 500px; /* 小さい画面対応 */
+  background-color: #A6E1CA;
+  border-radius: 20px;
+  padding: 2%;
+}
+
+/* フォームグループ */
+.form-group {
+  display: flex;
+  flex-direction: column;	/* 縦並び */
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.required {
+  color: red;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+/* テーブル */
+table{
+  width:100%;
+  border-collapse: collapse;
+  table-layout: fixed;	/* 列幅を固定 */
+}
+
+th{
+	background-color: #D3F2E6;
+	border: 1px solid #ccc;
+	padding: 8px;
+	text-align: left;
+}
+
+td{
+  background-color: #C3ECD9;
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+/* 列幅指定 */
+th:nth-child(1), td:nth-child(1) { width: 5%; }		/* ID列 */
+th:nth-child(2), td:nth-child(2) {					/* タイトル列 */
+	width: 25%;    
+	white-space: normal;
+	word-break: break-word;
+}  
+th:nth-child(3), td:nth-child(3) {					/* 著者列 */
+	width: 20%;    
+	white-space: normal;
+	word-break: break-word;
+}  
+th:nth-child(4), td:nth-child(4) {					/* メモ列 */
+	width: 25%;    
+	white-space: normal;
+	word-break: break-word; 
+}  
+th:nth-child(5), td:nth-child(5) { width: 10%; }	/* 借りた日列 */
+th:nth-child(6), td:nth-child(6) { width: 10%; }	/* 返却予定日列 */
+th:nth-child(7), td:nth-child(7) { width: 5%; }		/* お気に入り列 */
+th:nth-child(8), td:nth-child(8) { width: 5%; }		/* 削除列 */
+
+/* お気に入りボタン */
+.favorite-btn{
+	background:none;
+	border:none;
+	cursor: pointer;	/* ホバー時に指マーク */
+	padding: 0;
+	font-size:20px;
+}
+.star-on {
+    color: gold;		/* ★は黄色 */
+}
+.star-off {
+    color: #ccc;		/* ☆はグレー */
+}
